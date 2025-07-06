@@ -1,0 +1,223 @@
+<!-- 🎮🎵 Nabila Game + Music Hub --><!-- Siap deploy ke GitHub atau Vercel --><!-- Petunjuk untuk menambah lagu dan game di bagian komentar --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabila Game & Music Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      background: #111;
+      padding: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #0ff;
+    }
+    header p {
+      color: #ccc;
+    }
+    .music-section, .game-section, .partner-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+    .music-card, .game-card {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,255,255,0.1);
+    }
+    .music-card h3, .game-card h3 {
+      margin: 0 0 10px;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .game-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .game-card button {
+      margin-top: 10px;
+      padding: 10px;
+      background: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .partner-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .partner-section input, .partner-section textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+    .partner-section a button {
+      padding: 10px;
+      background: #0f0;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    .bg-music-control {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #0ff;
+      color: #000;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+    }
+  </style>
+  <script>
+    const bgMusic = new Audio("https://www.youtube.com/watch?v=lreJMSzZe9s");
+    bgMusic.loop = true;
+    bgMusic.autoplay = true;
+    bgMusic.volume = 0.7;
+    bgMusic.play();let isPlaying = true;
+function toggleMusic() {
+  if (isPlaying) {
+    bgMusic.pause();
+    document.querySelector('.bg-music-control').innerText = '🔊 Nyalakan Musik';
+  } else {
+    bgMusic.play();
+    document.querySelector('.bg-music-control').innerText = '🔇 Matikan Musik';
+  }
+  isPlaying = !isPlaying;
+}
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Nabila Game & Music Hub 🎮🎵</h1>
+    <p>Main Game + Dengerin Lagu + Rilis Musik Kamu Di Sini</p>
+  </header>  <div class="bg-music-control" onclick="toggleMusic()">🔇 Matikan Musik</div>  <!-- 🎵 MUSIC SECTION -->  <section class="music-section">
+    <h2>🎶 Koleksi Lagu Nabila Ahmad</h2><div class="music-card">
+  <h3>Cinta Yg Direlakan - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/ovtfUmmI7Jw" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Drunk Confessions - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/lreJMSzZe9s" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Sepatu Tua - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/pEj8HCr-8qo" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Wanita Penjual Sayur - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/Uc_cIhb9q44" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Broken Home Anthem - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/7MGsLhPD1ms" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Janda Nakal - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/kR8Oz7mU8cA" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Kenangan Dijalan Sepi - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/z5orh-Aumus" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Charting The Unknown - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/gkoV9Etgtz0" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Suami Manja - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/Vm65ECYLfzU" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>The Pleasure Of Love - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/AQMPILL8ukg" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Secangkir Kopi Dan Sepotong Roti - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lFARTDWS5rfEyo5Rbz9NQK1RcCx9B1TKA" allowfullscreen></iframe>
+</div>
+<div class="music-card">
+  <h3>Last On The Tracks - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lHuRVZMuVd3JSjOc9aDfwVWQhKTrY0nwU" allowfullscreen></iframe>
+</div>
+
+  </section>  <!-- 🎮 GAME SECTION -->  <section class="game-section">
+    <h2>🕹️ Galeri Game HTML5</h2>
+    <div class="game-grid">
+      <!-- ✅ 50 Game HTML5 Siap Main -->
+      <!-- Games dimuat dari sumber aman/embed -->
+      <script>
+        const games = [...Array(50).keys()].map(i => {
+          const id = i + 1;
+          return {
+            title: `Game #${id}`,
+            img: `https://picsum.photos/seed/game${id}/300/200`,
+            link: `https://games.crazygames.com/en_US/game-${id % 10 + 1}.html`
+          };
+        });window.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector('.game-grid');
+      games.forEach(game => {
+        const div = document.createElement('div');
+        div.className = 'game-card';
+        div.innerHTML = `
+          <img src="${game.img}" />
+          <h3>${game.title}</h3>
+          <a href="${game.link}" target="_blank"><button>Mainkan</button></a>
+        `;
+        grid.appendChild(div);
+      });
+    });
+  </script>
+</div>
+
+  </section>  <!-- 🤝 PARTNER SECTION -->  <section class="partner-section">
+    <h2>📢 Daftar Jadi Partner / Artis Musik</h2>
+    <p>Isi formulir ini untuk rilis lagu kamu di platform kami:</p>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="text" placeholder="Instagram / Sosial Media">
+      <input type="text" placeholder="Judul Lagu / Channel">
+      <textarea placeholder="Pesan Singkat / Bio"></textarea>
+      <a href="https://wa.me/6285810526151?text=Halo%20Admin%20Nabila,%20saya%20ingin%20rilis%20lagu%20di%20platform%20kamu!" target="_blank">
+        <button type="button">Kirim via WhatsApp</button>
+      </a>
+    </form>
+  </section>  <footer>
+    &copy; 2025 Nabila Ahmad Studio. All rights reserved.
+  </footer>
+</body>
+</html>
